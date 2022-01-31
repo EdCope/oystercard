@@ -14,5 +14,8 @@ attr_reader :balance
     @balance += money
   end
 
+  def deduct(money)
+    @balance -= money
+  end
 
 end
