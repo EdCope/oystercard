@@ -17,13 +17,17 @@ attr_reader :balance
   def deduct(money)
     @balance -= money
   end
+
   def touch_in
-  @in_use = true
+    @in_use = true
   end
+
+  def touch_out
+    @in_use = false
+  end
+
   def in_journey?
     @in_use
   end
-  def touch_out
-  @in_use = false
-  end
+
 end
